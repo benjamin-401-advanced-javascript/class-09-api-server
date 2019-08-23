@@ -5,6 +5,12 @@ const DataModel = require('../memory.js');
 class People extends DataModel {
 
 
+  /**
+   *
+   *
+   * @returns {} mongoose formatted schema
+   * @memberof People
+   */
   schema() {
     return {
       id: { required: true, type: 'string' },
@@ -14,6 +20,12 @@ class People extends DataModel {
     };
   }
 
+  /**
+   *
+   * @static
+   * @returns {} - with firstName, lastName, age
+   * @memberof People
+   */
   static sampleRecord() {
     return {
       'firstName': 'Test',
